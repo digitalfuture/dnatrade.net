@@ -1,0 +1,342 @@
+@import '../../../node_modules/vue-material/dist/vue-material.css';
+
+html {
+  touch-action: manipulation;
+}
+body {
+  cursor: default;
+  // background: url('../images/background.jpg') center / cover;
+  background-color: black !important;
+  user-select: none;
+  padding-bottom: 192px !important;
+
+  .container {
+    display: flex;
+
+    .item {
+      width: 50%;
+    }
+  }
+
+  .footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 192px;
+  }
+
+  .background-dark {
+    background: url(./images/background.jpg) center/cover;
+  }
+
+  .dimmed {
+    color: #455a64 !important;
+  }
+
+  .light {
+    color: #90a4ae !important;
+  }
+
+  .lighter {
+    color: rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .glow {
+    color: #e0f7fa !important;
+  }
+
+  .lavender,
+  a.title {
+    color: lavender !important;
+  }
+
+  .white {
+    color: white !important;
+  }
+
+  .blue {
+    color: #2196f3 !important;
+  }
+
+  .red {
+    color: #f44336 !important;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  button.rate-switcher:hover,
+  button.lavender:hover,
+  button .lavender:hover {
+    color: #90a4ae;
+  }
+
+  #currencies-list-balances,
+  #currencies-list-prices {
+    padding: 6px;
+
+    table {
+      th .md-table-head-text,
+      th .md-table-head-container,
+      td .md-table-cell-container {
+        padding: 6px 6px 6px 6px;
+      }
+    }
+
+    .md-sortable-icon {
+      opacity: 0;
+    }
+  }
+
+  .font-size-7 i {
+    font-size: 7px !important;
+  }
+
+  .md-card {
+    overflow: hidden;
+    padding: 6px 20px 20px 20px !important;
+
+    .md-title.hand-write {
+      font-weight: bold;
+    }
+
+    .md-subhead {
+      font-weight: bold;
+    }
+
+    .md-subhead.hand-write {
+      font-weight: normal;
+    }
+
+    .md-title.profit-info {
+      font-weight: normal;
+    }
+
+    .hand-write {
+      font-family: 'Courgette', cursive;
+    }
+  }
+
+  .flex1 {
+    flex: 1 !important;
+  }
+
+  .flex0 {
+    flex: unset !important;
+  }
+}
+
+//
+// Responsive design
+//
+@media only screen and (min-width: 960px) {
+  body {
+    .hide-large {
+      display: none;
+    }
+    .large-margin-right {
+      margin-right: 12px !important;
+    }
+    .large-margin-left {
+      margin-left: 12px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1365px) {
+  .show-larger {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  body {
+    .container {
+      flex-direction: column;
+
+      .item {
+        width: 100%;
+      }
+    }
+    .hide {
+      display: none;
+    }
+
+    .small-margin-top {
+      margin-top: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0;
+
+    .md-fab-bottom-right {
+      right: 24px !important;
+    }
+
+    .md-card {
+      padding: 6px 0px 20px 0px !important;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .initial {
+      position: absolute;
+      width: 100%;
+    }
+  }
+}
+
+//
+// Animations
+//
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.animation-show {
+  animation: show 750ms;
+  opacity: 1;
+}
+
+.animation-hide {
+  animation: hide 750ms;
+  opacity: 0;
+}
+
+.animation-pulse {
+  animation: pulse 1500ms infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+//
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+//
+@-webkit-keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

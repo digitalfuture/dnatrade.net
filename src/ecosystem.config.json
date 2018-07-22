@@ -1,0 +1,14 @@
+{
+  "apps" : [{
+    "name"        : "robot",
+    "script"      : "./server.js",
+    "watch"       : true,
+    "source_map_support"  : true,
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "env_production" : {
+       "NODE_ENV": "production"
+    }
+  }]
+}
