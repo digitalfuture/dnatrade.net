@@ -63,7 +63,7 @@
     "dexie": "^2.0.1",
     "express": "^4.15.3",
     "gulp-filenames-to-json": "^0.1.2",
-    "highcharts": "^5.0.12",
+    "highcharts": "^6.1.0",
     "housecall": "^1.4.1",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
